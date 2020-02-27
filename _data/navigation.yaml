@@ -1,0 +1,8 @@
+- name: About
+  link: "#about-section"
+- name: Team
+  link: "#team-section"
+- name: Space Termites
+  link: "#space-termites-section"
+- name: Conact
+  link: "#contact-section"

@@ -4,10 +4,9 @@
       <div class="col-md-2">
         <h2 class="footer-heading mb-4">Quick Links</h2>
         <ul class="list-unstyled">
-          <li><a href="#about-section" class="smoothscroll">About Us</a></li>
-          <li><a href="#services-section" class="smoothscroll">Services</a></li>
-          <li><a href="#testimonials-section" class="smoothscroll">Testimonials</a></li>
-          <li><a href="#contact-section" class="smoothscroll">Contact Us</a></li>
+          {% for item in site.data.navigation %}
+            <li><a href="{{ item.link }}" class="smoothscroll">{{ item.name }}</a></li>
+          {% endfor %}
         </ul>
       </div>
       <div class="col-md-7">
@@ -30,8 +29,7 @@
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             Copyright &copy;
             <script>document.write(new Date().getFullYear());</script> | This template is made
-            with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com"
-              target="_blank">Colorlib</a>
+            with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
           </p>
         </div>
